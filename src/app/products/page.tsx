@@ -7,12 +7,28 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const personas = [
-  { role: "Financial Advisors", desc: "Meeting prep, rebalance memos, IPS reviews — Drift handles the 22 hours a week that keep advisors from advising.", accent: "from-accent/20 to-transparent" },
-  { role: "Wealth Managers", desc: "Household-scoped answers across multi-account, multi-custodian portfolios. Every claim cited, every action logged.", accent: "from-blue-500/15 to-transparent" },
-  { role: "Accountants & CPAs", desc: "Cross-reference 1099s, K-1s, and IRS code instantly. Draft client memos with citations before the next engagement.", accent: "from-purple-500/15 to-transparent" },
+  { role: "Financial Advisors", desc: "22 hours back for the work that actually moves relationships forward.", accent: "from-accent/20 to-transparent" },
+  { role: "Wealth Managers", desc: "Household-scoped answers with citations, controls, and cleaner follow-through.", accent: "from-blue-500/15 to-transparent" },
+  { role: "Accountants & CPAs", desc: "Draft faster, review faster, and keep every answer grounded in source material.", accent: "from-purple-500/15 to-transparent" },
 ];
 
 const modules = [
+  {
+    tag: "DANTE BY DRIFT",
+    color: "accent",
+    glow: "rgba(41,149,120,0.14)",
+    headline: "A high-trust workspace for finance research, writing, and analysis",
+    description: "DANTE gives teams one surface for complex drafting, document review, and sourced financial work. Built for serious workflows, not generic chat.",
+    features: [
+      { icon: "↗", title: "Research with context", desc: "Pulls firm documents, records, and policy context into the same workspace." },
+      { icon: "⬛", title: "Draft with control", desc: "Structured writing flows for memos, reviews, and client-ready outputs." },
+      { icon: "↟", title: "Review before release", desc: "Operators and reviewers stay in the loop before anything moves downstream." },
+    ],
+    mock: [
+      { q: "Client strategy memo · draft requested", a: "↳ Built from source docs, prior notes, and review policy", ok: true },
+      { q: "Quarterly review packet · open issues", a: "↳ 3 sections flagged for human approval before export", ok: true },
+    ]
+  },
   {
     tag: "DRIFT ASSISTANT",
     color: "accent",
@@ -167,10 +183,10 @@ export default function ProductsPage() {
           <motion.div ref={heroRef} className="mb-24 max-w-3xl" initial={{ opacity: 0, y: 32 }} animate={heroIn ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
             <p className="text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-5">PRODUCTS</p>
             <h1 className="font-display text-5xl md:text-[72px] font-normal text-white leading-[1.04] tracking-tight mb-6">
-              The full Drift suite
+              Products built for real financial work
             </h1>
             <p className="text-lg text-white/50 leading-relaxed max-w-xl">
-              Five modules. One data layer. Every AI action logged. Built for financial advisors, wealth managers, and accountants.
+              A tighter suite, one data layer, and reviewed workflows from research to audit trail.
             </p>
           </motion.div>
 

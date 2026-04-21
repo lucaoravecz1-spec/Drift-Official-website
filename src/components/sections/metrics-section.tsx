@@ -1,13 +1,50 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+function AnimatedCounter({
+  end,
+  suffix = "",
+  duration = 1800,
+}: {
+  end: number;
+  suffix?: string;
+  duration?: number;
+}) {
+  const [count, setCount] = useState(0);
+  const requestRef = useRef<number | null>(null);
+  const startTimeRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const animate = (timestamp: number) => {
+      if (startTimeRef.current === null) startTimeRef.current = timestamp;
+      const progress = Math.min((timestamp - startTimeRef.current) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * end));
+      if (progress < 1) requestRef.current = requestAnimationFrame(animate);
+    };
+
+    requestRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (requestRef.current) cancelAnimationFrame(requestRef.current);
+    };
+  }, [duration, end]);
+
+  return (
+    <span className="text-white font-light text-[3.5rem] md:text-[4.5rem] leading-none tracking-[-0.05em]">
+      {count}
+      {suffix}
+    </span>
+  );
+}
+
 const proofPoints = [
   {
-    label: "Product posture",
-    title: "Grounded in real workflows",
-    body: "Built around meeting prep, follow-up, and review instead of abstract AI promises.",
+    label: "Advisor time back",
+    title: "22 hours saved every week",
+    body: "Meeting prep, follow-through, and review work stop crowding out the client-facing week.",
   },
   {
     label: "Systems fit",
@@ -36,11 +73,53 @@ export default function MetricsSection() {
           <div>
             <p className="text-[0.72rem] uppercase tracking-[0.18em] font-semibold text-[#efb2ab]">Why it feels more believable</p>
             <p className="mt-6 text-[28px] md:text-[34px] leading-[1.28] font-normal text-white/84 max-w-[640px]">
-              Better trust does not come from louder numbers. It comes from showing where the product fits, what kind of work it supports, and how serious teams stay in control.
+              Better trust does not come from louder claims. It comes from clear outcomes, visible controls, and a workflow that gives real time back to the team.
             </p>
             <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-white/56">
               <span className="h-2 w-2 rounded-full bg-[#f1b3ac]" />
-              proof over posturing
+              22 hours returned to the week
+            </div>
+
+            <div className="mt-10 grid gap-5 sm:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.65, delay: 0.12 }}
+                className="relative overflow-hidden rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-6 backdrop-blur-xl"
+              >
+                <motion.div
+                  aria-hidden="true"
+                  animate={{ x: ["-20%", "120%"], opacity: [0, 0.18, 0] }}
+                  transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute top-0 h-full w-20 -rotate-12 bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.2),transparent)] blur-xl"
+                />
+                <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/32">Time saved</p>
+                <div className="mt-5 flex items-end gap-2">
+                  {inView ? <AnimatedCounter end={22} /> : <span className="text-white font-light text-[3.5rem] md:text-[4.5rem] leading-none">0</span>}
+                  <span className="pb-2 text-sm uppercase tracking-[0.16em] text-white/42">hours / week</span>
+                </div>
+                <p className="mt-4 text-sm leading-6 text-white/54">Back to advisors once prep, follow-up, and review stop eating the schedule.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.65, delay: 0.2 }}
+                className="relative overflow-hidden rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-6 backdrop-blur-xl"
+              >
+                <motion.div
+                  aria-hidden="true"
+                  animate={{ x: ["-20%", "120%"], opacity: [0, 0.16, 0] }}
+                  transition={{ duration: 6.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
+                  className="absolute top-0 h-full w-20 -rotate-12 bg-[linear-gradient(180deg,transparent,rgba(241,179,172,0.22),transparent)] blur-xl"
+                />
+                <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/32">Money impact</p>
+                <div className="mt-5 flex items-end gap-2">
+                  {inView ? <AnimatedCounter end={13} suffix="x" /> : <span className="text-white font-light text-[3.5rem] md:text-[4.5rem] leading-none">0x</span>}
+                  <span className="pb-2 text-sm uppercase tracking-[0.16em] text-white/42">firm ROI</span>
+                </div>
+                <p className="mt-4 text-sm leading-6 text-white/54">A cleaner operating week compounds into real economic leverage for the firm.</p>
+              </motion.div>
             </div>
           </div>
 

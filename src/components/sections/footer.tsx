@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import DriftMark from "@/components/brand/drift-mark";
 
 const footerColumns = [
   {
@@ -42,13 +42,9 @@ export default function Footer() {
         <div className="grid gap-10 border-b border-white/8 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <div className="flex items-center gap-3">
-              <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d/visual-edit-uploads/1763856934092-r02d06kx0p.png"
-                alt="Drift logo"
-                width={38}
-                height={38}
-                className="brightness-0 invert"
-              />
+              <div className="text-white">
+                <DriftMark className="h-10 w-10" />
+              </div>
               <span className="text-2xl font-semibold tracking-[-0.04em] text-white">Drift AI</span>
             </div>
             <h2 className="mt-8 max-w-xl text-[clamp(2.2rem,4.4vw,4rem)] leading-[1.04] tracking-[-0.045em] text-white">
@@ -95,7 +91,12 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-4 pt-8 text-sm text-white/34 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Drift AI, LLC.</p>
+          <div className="flex items-center gap-3">
+            <div className="text-white/88">
+              <DriftMark className="h-7 w-7" />
+            </div>
+            <p>© 2026 Drift AI, LLC.</p>
+          </div>
           <p>Designed for a stronger product story, calmer motion, and clearer trust signals.</p>
         </div>
       </div>

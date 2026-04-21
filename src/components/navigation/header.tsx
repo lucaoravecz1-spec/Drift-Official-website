@@ -2,11 +2,17 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X, Briefcase, Users, Phone, Shield, FileText, ChevronDown, Grid } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import DriftMark from "@/components/brand/drift-mark";
 
 const productItems = [
+  {
+    icon: Grid,
+    title: "DANTE by Drift",
+    description: "A finance-native research and drafting workspace for complex professional work.",
+    href: "/products",
+  },
   {
     icon: Briefcase,
     title: "Drift Assistant",
@@ -87,13 +93,9 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center gap-3">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d/visual-edit-uploads/1763855775370-oqj4m75fvv.png"
-                  alt="Drift AI Logo"
-                  width={36}
-                  height={36}
-                  className="brightness-0 invert"
-                />
+                <div className="text-white">
+                  <DriftMark className="h-9 w-9" />
+                </div>
                 <span className="text-2xl font-normal tracking-tight text-white">Drift</span>
               </Link>
             </div>
