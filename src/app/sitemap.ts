@@ -8,6 +8,11 @@ const siteUrl =
 const routes = [
   "",
   "/products",
+  "/solutions",
+  "/solutions/wealth-advisors",
+  "/solutions/financial-services",
+  "/solutions/operations",
+  "/solutions/compliance",
   "/about",
   "/contact",
   "/careers",

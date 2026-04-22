@@ -138,6 +138,12 @@ export default function Header() {
                 </AnimatePresence>
               </div>
 
+              <div className="group flex cursor-pointer items-center gap-1 py-2">
+                <Link href="/solutions" className="text-base font-medium text-white/80 transition-colors group-hover:text-white">
+                  Solutions
+                </Link>
+              </div>
+
               <div
                 className="relative"
                 onMouseEnter={() => setShowCompanyMenu(true)}
@@ -241,6 +247,27 @@ export default function Header() {
                           <item.icon className="h-5 w-5 text-white/60" />
                         </div>
                         <h4 className="text-sm font-medium text-white">{item.title}</h4>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-4 ml-1 text-[10px] font-bold uppercase tracking-widest text-white/30">Solutions</p>
+                  <div className="grid grid-cols-1 gap-3">
+                    {[
+                      { title: "Wealth advisors", href: "/solutions/wealth-advisors" },
+                      { title: "Financial services", href: "/solutions/financial-services" },
+                      { title: "Operations", href: "/solutions/operations" },
+                      { title: "Compliance", href: "/solutions/compliance" },
+                    ].map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={toggleMenu}
+                        className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white"
+                      >
+                        {item.title}
                       </Link>
                     ))}
                   </div>

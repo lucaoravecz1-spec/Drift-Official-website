@@ -37,14 +37,17 @@ export const metadata: Metadata = {
     template: "%s | Drift AI",
   },
   description:
-    "Drift AI helps financial teams handle prep, review, and follow-through in one controlled workflow.",
+    "Drift AI helps financial teams automate prep, review, compliance workflows, and follow-through in one controlled operating layer.",
   applicationName: "Drift AI",
   keywords: [
     "Drift AI",
-    "AI operations",
-    "financial advisor software",
-    "compliance workflow",
-    "finance AI platform",
+    "AI for financial operations",
+    "financial operations automation software",
+    "AI compliance software for finance",
+    "financial workflow automation",
+    "financial advisor operations software",
+    "RIA operations management software",
+    "financial compliance workflow management",
   ],
   alternates: {
     canonical: "/",
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "Drift AI",
     title: "Drift AI | AI Operations for Financial Teams",
     description:
-      "A calmer AI operating layer for financial teams, with clearer controls and faster execution.",
+      "AI operations for financial teams with workflow automation, compliance review, and audit-ready controls.",
     images: [
       {
         url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d-giga-ai/assets/images/x1ioW6hoCO0EWJfApnLyqDWxrs-1.png",
@@ -69,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Drift AI | AI Operations for Financial Teams",
     description:
-      "A calmer AI operating layer for financial teams, with clearer controls and faster execution.",
+      "AI operations for financial teams with workflow automation, compliance review, and audit-ready controls.",
     images: [
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d-giga-ai/assets/images/x1ioW6hoCO0EWJfApnLyqDWxrs-1.png",
     ],
