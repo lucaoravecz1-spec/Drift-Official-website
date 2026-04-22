@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/sonner";
 
-const publicSans = Public_Sans({
+const displayFont = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-display-face",
+});
+
+const bodyFont = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-body-face",
 });
 
 const siteUrl =
@@ -24,14 +30,14 @@ export const metadata: Metadata = {
     template: "%s | Drift AI",
   },
   description:
-    "Drift AI helps financial teams handle prep, follow-through, and compliance review in one controlled workflow.",
+    "Drift AI helps financial teams handle prep, review, and follow-through in one controlled workflow.",
   applicationName: "Drift AI",
   keywords: [
     "Drift AI",
-    "AI for financial advisors",
-    "finance workflow automation",
-    "compliance review software",
-    "advisor operations platform",
+    "AI operations",
+    "financial advisor software",
+    "compliance workflow",
+    "finance AI platform",
   ],
   alternates: {
     canonical: "/",
@@ -42,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Drift AI",
     title: "Drift AI | AI Operations for Financial Teams",
     description:
-      "AI operations for financial teams, with clearer workflows, faster reviews, and stronger controls.",
+      "A calmer AI operating layer for financial teams, with clearer controls and faster execution.",
     images: [
       {
         url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d-giga-ai/assets/images/x1ioW6hoCO0EWJfApnLyqDWxrs-1.png",
@@ -56,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Drift AI | AI Operations for Financial Teams",
     description:
-      "AI operations for financial teams, with clearer workflows, faster reviews, and stronger controls.",
+      "A calmer AI operating layer for financial teams, with clearer controls and faster execution.",
     images: [
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0cdc52da-1c8b-467b-8c37-4a187c0cfb9d-giga-ai/assets/images/x1ioW6hoCO0EWJfApnLyqDWxrs-1.png",
     ],
@@ -81,7 +87,7 @@ export default function RootLayout({
 }: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.variable} antialiased`}>
+      <body className={`${displayFont.variable} ${bodyFont.variable} antialiased`}>
         <Script
           id="orchids-browser-logs"
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"

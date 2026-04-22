@@ -7,25 +7,25 @@ import { ArrowRight, ShieldCheck, Workflow, Zap } from "lucide-react";
 const cards = [
   {
     icon: Workflow,
-    title: "Connect your workflow",
-    body: "Keep CRM, documents, and review steps in one place.",
+    title: "One operating layer",
+    body: "Bring prep, review, and follow-through into one system.",
   },
   {
     icon: ShieldCheck,
-    title: "Keep control visible",
-    body: "Approvals, audit trails, and handoffs stay clear.",
+    title: "Controls stay visible",
+    body: "Approvals, audit trails, and handoffs remain clear.",
   },
   {
     icon: Zap,
-    title: "Move faster",
-    body: "Cut prep and follow-through without adding chaos.",
+    title: "Faster execution",
+    body: "Move quicker without making the workflow messier.",
   },
 ];
 
 export default function HomeSummary() {
   return (
     <section id="product-story" className="px-6 py-18 sm:px-8 lg:px-12 lg:py-24">
-      <div className="mx-auto grid w-full max-w-[1380px] gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mx-auto grid w-full max-w-[1380px] gap-6 lg:grid-cols-[0.92fr_1.08fr]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,19 +34,19 @@ export default function HomeSummary() {
           className="rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.018))] p-8 shadow-[0_18px_70px_rgba(0,0,0,0.22)] backdrop-blur-xl"
         >
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#f0b1ac]">
-            Why teams choose Drift
+            Built for financial teams
           </p>
-          <h2 className="mt-5 max-w-lg text-[clamp(2rem,4.5vw,3.8rem)] leading-[1.03] tracking-[-0.045em] text-white">
-            Less busywork. More control.
+          <h2 className="mt-5 max-w-lg text-[clamp(2rem,4.4vw,3.8rem)] leading-[1.03] tracking-[-0.045em] text-white">
+            Sophisticated where it matters. Clear where it counts.
           </h2>
           <p className="mt-5 max-w-xl text-[1rem] leading-7 text-white/58">
-            Drift gives financial teams one calmer system for prep, review, and follow-through.
+            Drift helps teams work faster without losing the structure, review, and accountability serious operations need.
           </p>
           <Link
             href="/products"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition-transform duration-300 hover:scale-[1.02]"
           >
-            See the product
+            Explore the platform
             <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>

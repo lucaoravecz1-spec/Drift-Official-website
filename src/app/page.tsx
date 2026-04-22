@@ -9,7 +9,7 @@ import Footer from "@/components/sections/footer";
 export const metadata: Metadata = {
   title: "AI Operations for Financial Teams",
   description:
-    "Drift AI helps financial teams move faster with simpler workflows, clearer reviews, and stronger compliance controls.",
+    "Drift AI helps financial teams move faster with simpler workflows, cleaner reviews, and stronger controls.",
   alternates: {
     canonical: "/",
   },
@@ -34,12 +34,7 @@ export default function Home() {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Drift AI helps financial teams handle prep, follow-through, and compliance review in one controlled workflow.",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+      "Drift AI helps financial teams handle prep, review, and follow-through in one controlled workflow.",
     brand: {
       "@type": "Brand",
       name: "Drift AI",

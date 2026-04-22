@@ -120,7 +120,7 @@ const HeroSection = () => {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#17ff6d]" />
             </span>
             <span className="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">
-              Built for financial teams
+              Built for faster, clearer financial operations
             </span>
           </motion.div>
 
@@ -131,7 +131,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            AI operations<br />for financial<br />teams.
+            AI operations<br />for financial teams<br />with standards.
           </motion.h1>
 
           {/* Subheading */}
@@ -141,7 +141,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            Drift brings prep, follow-through, and review into one clear workflow.
+            Drift brings prep, follow-through, and compliance review into one elegant operating layer.
           </motion.p>
 
           {/* CTAs */}
@@ -166,7 +166,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.97 }}
                 className="rounded-full border border-white/20 bg-white/[0.04] text-white px-7 py-3.5 text-sm font-medium flex items-center gap-2 backdrop-blur-xl transition-all duration-300"
               >
-                View Product <ArrowRight className="w-3.5 h-3.5" />
+                See the Platform <ArrowRight className="w-3.5 h-3.5" />
               </motion.div>
             </Link>
           </motion.div>

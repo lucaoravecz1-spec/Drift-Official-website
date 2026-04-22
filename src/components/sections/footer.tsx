@@ -48,10 +48,10 @@ export default function Footer() {
               <span className="text-2xl font-semibold tracking-[-0.04em] text-white">Drift AI</span>
             </div>
             <h2 className="mt-8 max-w-xl text-[clamp(2.2rem,4.4vw,4rem)] leading-[1.04] tracking-[-0.045em] text-white">
-              Smarter workflows for financial teams.
+              AI operations with a steadier hand.
             </h2>
             <p className="mt-5 max-w-xl text-[1rem] leading-7 text-white/52">
-              Drift keeps prep, review, and follow-through in one clearer system.
+              Drift helps financial teams move faster without losing review, accountability, or context.
             </p>
             <Link
               href="/contact"
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
             <p>© 2026 Drift AI, LLC.</p>
           </div>
-          <p>Clearer workflows. Stronger controls.</p>
+          <p>Clearer workflows. Stronger judgment.</p>
         </div>
       </div>
     </footer>

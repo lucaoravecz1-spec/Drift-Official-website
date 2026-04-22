@@ -44,17 +44,17 @@ const proofPoints = [
   {
     label: "Time back",
     title: "22 hours saved each week",
-    body: "Less admin work. More time with clients.",
+    body: "Less admin drag. More room for client work.",
   },
   {
     label: "Systems fit",
-    title: "Works with your current stack",
-    body: "CRM, docs, and review tools stay connected.",
+    title: "Fits the tools teams already use",
+    body: "CRM, docs, calendars, and internal knowledge stay connected.",
   },
   {
     label: "Trust",
     title: "Built for reviewed work",
-    body: "Approvals and audit trails stay visible.",
+    body: "Approvals, audit history, and controls stay in view.",
   },
 ];
 
@@ -73,11 +73,11 @@ export default function MetricsSection() {
           <div>
             <p className="text-[0.72rem] uppercase tracking-[0.18em] font-semibold text-[#efb2ab]">Why it feels more believable</p>
             <p className="mt-6 text-[28px] md:text-[34px] leading-[1.28] font-normal text-white/84 max-w-[640px]">
-              Clear outcomes and visible controls build trust faster than louder claims.
+              Strong software feels clear, controlled, and useful from the first screen.
             </p>
             <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-white/56">
               <span className="h-2 w-2 rounded-full bg-[#f1b3ac]" />
-              22 hours back each week
+              22 hours back per week
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2">
@@ -98,7 +98,7 @@ export default function MetricsSection() {
                   {inView ? <AnimatedCounter end={22} /> : <span className="text-white font-light text-[3.5rem] md:text-[4.5rem] leading-none">0</span>}
                   <span className="pb-2 text-sm uppercase tracking-[0.16em] text-white/42">hours / week</span>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-white/54">Saved when prep and review stop eating the schedule.</p>
+                <p className="mt-4 text-sm leading-6 text-white/54">Saved when prep and review stop eating the week.</p>
               </motion.div>
 
               <motion.div
@@ -118,7 +118,7 @@ export default function MetricsSection() {
                   {inView ? <AnimatedCounter end={13} suffix="x" /> : <span className="text-white font-light text-[3.5rem] md:text-[4.5rem] leading-none">0x</span>}
                   <span className="pb-2 text-sm uppercase tracking-[0.16em] text-white/42">firm ROI</span>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-white/54">Cleaner workflows create real leverage for the firm.</p>
+                <p className="mt-4 text-sm leading-6 text-white/54">A cleaner workflow compounds into real economic leverage.</p>
               </motion.div>
             </div>
           </div>
