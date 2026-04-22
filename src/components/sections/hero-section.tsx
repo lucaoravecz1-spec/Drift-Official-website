@@ -120,7 +120,7 @@ const HeroSection = () => {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#17ff6d]" />
             </span>
             <span className="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">
-              Now Available: FINRA-Ready Audit Bundle Export
+              Built for financial teams
             </span>
           </motion.div>
 
@@ -131,7 +131,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            AI operations<br />built for modern<br />financial teams.
+            AI operations<br />for financial<br />teams.
           </motion.h1>
 
           {/* Subheading */}
@@ -141,7 +141,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            Drift brings meeting prep, follow-through, and compliance review into one calmer workflow so financial teams can move faster without losing control.
+            Drift brings prep, follow-through, and review into one clear workflow.
           </motion.p>
 
           {/* CTAs */}
@@ -157,7 +157,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.97 }}
                 className="rounded-full bg-white text-black px-7 py-3.5 text-sm font-semibold shadow-lg transition-all duration-300"
               >
-                Request a Pilot
+                Book a Demo
               </motion.div>
             </Link>
             <Link href="/products">
@@ -166,7 +166,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.97 }}
                 className="rounded-full border border-white/20 bg-white/[0.04] text-white px-7 py-3.5 text-sm font-medium flex items-center gap-2 backdrop-blur-xl transition-all duration-300"
               >
-                See how it works <ArrowRight className="w-3.5 h-3.5" />
+                View Product <ArrowRight className="w-3.5 h-3.5" />
               </motion.div>
             </Link>
           </motion.div>
@@ -178,14 +178,11 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.58, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
             <div className="rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
-              CRM connected
-            </div>
-            <div className="rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
-              human review preserved
+              connected systems
             </div>
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
               <ShieldCheck className="h-3.5 w-3.5 text-[#f1b3ac]" />
-              guarded workflows
+              visible controls
             </div>
           </motion.div>
         </div>
