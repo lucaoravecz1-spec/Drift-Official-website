@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Manrope } from "next/font/google";
+import { Bricolage_Grotesque, Manrope, Marcellus_SC } from "next/font/google";
 import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
@@ -16,6 +16,13 @@ const bodyFont = Manrope({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-body-face",
+});
+
+const accentFont = Marcellus_SC({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-accent-face",
 });
 
 const siteUrl =
@@ -87,7 +94,7 @@ export default function RootLayout({
 }: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`${displayFont.variable} ${bodyFont.variable} antialiased`}>
+      <body className={`${displayFont.variable} ${bodyFont.variable} ${accentFont.variable} antialiased`}>
         <Script
           id="orchids-browser-logs"
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"

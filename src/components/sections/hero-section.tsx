@@ -119,7 +119,7 @@ const HeroSection = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#17ff6d]" />
             </span>
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">
+            <span className="font-accent text-[0.84rem] font-normal uppercase tracking-[0.22em] text-white/62">
               Built for faster, clearer financial operations
             </span>
           </motion.div>
