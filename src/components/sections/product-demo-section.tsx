@@ -14,7 +14,7 @@ const tabs = [
 const demos: Record<string, { headline: string; sub: string; ui: React.ReactNode }> = {
   assistant: {
     headline: "Ask anything about any client household",
-    sub: "Grounded answers with streaming citations. Works for RIAs, wealth managers, and accountants.",
+    sub: "Grounded answers with streaming citations. Works for RIAs, wealth managers, and accountants handling client email drafting and follow-through.",
     ui: <AssistantDemo />,
   },
   vault: {
@@ -217,7 +217,7 @@ export default function ProductDemoSection() {
               See Drift in action
             </h2>
             <p className="text-base text-white/45 leading-relaxed max-w-md lg:pb-1">
-              Click through each module to explore how Drift works for financial advisors, wealth managers, and accounting teams.
+              Click through each module to explore how Drift handles AI meeting notes for advisors, client email drafting, and RIA workflow automation.
             </p>
           </div>
         </motion.div>

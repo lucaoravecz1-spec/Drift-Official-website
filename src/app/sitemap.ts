@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { blogPosts } from "@/lib/blog-data";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -23,15 +24,22 @@ const routes = [
   "/integrations",
   "/affiliate",
   "/drift-studio",
+  "/ai-meeting-notes-financial-advisors",
+  "/email-automation-ria",
+  "/ai-document-summary",
+  "/wealthbox-ai-integration",
+  "/ai-compliance-workflows",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const blogRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
+  const allRoutes = [...routes, ...blogRoutes];
 
-  return routes.map((route) => ({
+  return allRoutes.map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: now,
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.7,
+    changeFrequency: route === "" || route.startsWith("/blog/") ? "weekly" : "monthly",
+    priority: route === "" ? 1 : route.startsWith("/blog/") ? 0.8 : 0.7,
   }));
 }

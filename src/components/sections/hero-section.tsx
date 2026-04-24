@@ -120,7 +120,7 @@ const HeroSection = () => {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#17ff6d]" />
             </span>
             <span className="font-accent text-[0.84rem] font-normal uppercase tracking-[0.22em] text-white/62">
-              Built for faster, clearer financial operations
+              Built for RIAs and independent advisors
             </span>
           </motion.div>
 
@@ -131,7 +131,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            AI operations<br />for financial teams<br />with standards.
+            The AI Agent Built<br />for Financial<br />Advisors
           </motion.h1>
 
           {/* Subheading */}
@@ -141,7 +141,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            Drift brings prep, follow-through, and compliance review into one elegant operating layer.
+            Drift is a financial advisor AI platform built for RIA workflow automation, AI meeting notes for advisors, client email drafting, document summaries, and compliance workflow automation.
           </motion.p>
 
           {/* CTAs */}
@@ -157,7 +157,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.97 }}
                 className="rounded-full bg-white text-black px-7 py-3.5 text-sm font-semibold shadow-lg transition-all duration-300"
               >
-                Book a Demo
+                Book a 15-Minute Demo
               </motion.div>
             </Link>
             <Link href="/products">
@@ -178,11 +178,14 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.58, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
             <div className="rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
-              connected systems
+              meeting capture
+            </div>
+            <div className="rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
+              automated follow-through
             </div>
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/22 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/52 backdrop-blur-xl">
               <ShieldCheck className="h-3.5 w-3.5 text-[#f1b3ac]" />
-              visible controls
+              compliance workflows
             </div>
           </motion.div>
         </div>

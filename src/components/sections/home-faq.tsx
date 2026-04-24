@@ -9,12 +9,12 @@ const faqs = [
   {
     question: "How does Drift help with compliance reviews?",
     answer:
-      "Drift keeps review states, approvals, and audit history inside the workflow so teams can automate work without creating a black box for operators or compliance leaders.",
+      "Drift keeps review states, approvals, and audit history inside the workflow so teams can automate work without creating a black box for operators or compliance leaders. That makes it a practical system for compliance workflow automation in advisory firms.",
   },
   {
     question: "Is Drift built for advisory firms and RIAs?",
     answer:
-      "Yes. Drift is designed for advisory firms, RIAs, and other financial teams that need household context, approval visibility, and workflow consistency across multiple systems.",
+      "Yes. Drift is designed for advisory firms, RIAs, and other financial teams that need household context, approval visibility, and workflow consistency across multiple systems. It is financial advisor AI built for real operating work, not generic chat.",
   },
   {
     question: "Can Drift integrate with our current financial systems?",

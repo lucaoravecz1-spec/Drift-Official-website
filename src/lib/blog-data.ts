@@ -1,147 +1,107 @@
 export const blogPosts = [
-    {
-      slug: "future-of-ai-voice-assistants",
-      title: "Designing voice automation that still feels human under pressure",
-      excerpt: "What separates memorable AI experiences from brittle call flows: pacing, escalation design, context retention, and the small interaction details operators actually notice.",
-      content: `
-        <p>AI voice assistants are no longer a thing of the future—they are here, and they are transforming how businesses interact with their customers. From automated customer support to personalized sales experiences, the possibilities are endless. The rapid advancement in neural text-to-speech and large language models has bridged the gap between robotic interactions and human-like conversations.</p>
-        
-        <div class="my-12 rounded-2xl overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200" alt="Futuristic AI interface" class="w-full h-auto" />
-        </div>
-
-        <p>In this article, we explore the key trends driving the adoption of AI voice technology and how your business can stay ahead of the curve. Companies are increasingly moving away from legacy IVR systems towards intelligent, context-aware voice agents that can handle complex queries without human intervention.</p>
-        
-        <h2>Key Trends in AI Voice for 2026</h2>
-        <ul>
-          <li><strong>Natural Language Understanding (NLU):</strong> Modern systems can now detect sarcasm, hesitation, and subtle emotional cues, allowing for more empathetic responses.</li>
-          <li><strong>Zero-Latency Response:</strong> With edge computing and optimized model inference, AI agents respond in under 200ms, making the conversation feel indistinguishable from a human call.</li>
-          <li><strong>Hyper-Personalization:</strong> By integrating directly with your customer data platform, the AI knows the user's name, purchase history, and even their preferred communication style before they say a word.</li>
-          <li><strong>Global Reach:</strong> Real-time translation and accent adaptation allow a single AI agent to serve customers in over 100 languages with local dialect accuracy.</li>
-        </ul>
-
-        <p>The economic impact is also undeniable. Businesses implementing these advanced voice agents have reported a 60% reduction in average handle time and a 35% increase in first-call resolution. As we move further into 2026, the question is no longer "should we use AI?" but "how deeply should it be integrated into our core operations?"</p>
-
-        <p>Looking ahead, we expect the rise of multi-modal interactions where voice agents can simultaneously interact with visual interfaces on a user's screen, providing a truly unified digital experience.</p>
-      `,
-      author: "Luca Oravecz",
-      date: "Apr 14, 2026",
-      category: "Product & technology",
-      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1200"
-    },
-    {
-      slug: "optimize-your-ai-agent",
-      title: "Building operator controls that don't fight the team using them",
-      excerpt: "A practical look at policy writing, fallback design, approvals, and handoffs that help operations teams trust automation instead of working around it.",
-        content: `
-          <p>Optimizing your AI agent is crucial for delivering a seamless customer experience. It's not just about setting it up; it's about continuous refinement. A well-optimized agent acts as a direct extension of your brand's voice and values.</p>
-          
-          <div class="my-12 rounded-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" alt="Advanced AI system optimization" class="w-full h-auto" />
-          </div>
-
-          <p>In the rapidly evolving landscape of 2026, customer expectations have reached new heights. Users no longer just want answers; they want empathy, speed, and precision. Here are five actionable tips to get the most out of your Drift AI agent:</p>
-          
-          <ol>
-            <li><strong>Define clear personas:</strong> Ensure your voice agents have a consistent tone, whether it's professional, friendly, or authoritative. In 2026, we've found that "Relatable Professionalism" performs best across all industries.</li>
-            <li><strong>Integrate with your existing CRM:</strong> Context is king. Knowing a customer's history allows the agent to provide more relevant and faster solutions. Modern integrations allow for real-time data pulling in under 50ms.</li>
-            <li><strong>Monitor and analyze interaction logs:</strong> Identify where customers get confused and refine the dialogue flows accordingly. Use our advanced sentiment analysis dashboard to spot frustration before it scales.</li>
-            <li><strong>Implement fallback mechanisms:</strong> When an agent hits its limit, ensure a smooth handoff to a human operator with all context preserved. The transition should be seamless, with the human agent receiving a full summary of the AI's conversation so far.</li>
-            <li><strong>Regularly update the knowledge base:</strong> AI is only as good as the information it has access to. Keep your documentation current. We recommend a weekly audit of your support docs to ensure the AI isn't hallucinating based on outdated pricing or features.</li>
-          </ol>
-
-          <div class="my-12 rounded-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200" alt="High-performance neural processing" class="w-full h-auto" />
-          </div>
-
-          <p>Beyond these five steps, consider the emotional resonance of your AI's voice. With the latest ultra-realistic neural synthesis, you can now tune the "breathiness" and "intonation" to match the gravity of the user's situation. For example, a supportive tone for billing issues vs. an energetic tone for sales inquiries.</p>
-
-
-        <p>By following these steps, businesses have seen a 40% increase in customer satisfaction scores within the first three months of implementation. As we move further into 2026, the gap between companies that optimize their AI and those that treat it as a "set and forget" tool will only widen.</p>
-      `,
-      author: "Luca Oravecz",
-      date: "Apr 9, 2026",
-      category: "Operations",
-        image: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=1200"
-      },
-    {
-      slug: "understanding-voice-ai",
-      title: "What a compliance-ready AI surface actually needs",
-      excerpt: "Audit trails, review states, disclosure, and governance are not extra pages. They shape the product from the first interaction onward.",
-      content: `
-        <p>Voice AI can seem complex, but at its core, it's about teaching computers to understand and speak human language. This involves several layers of technology working together in milliseconds. Understanding these layers helps business leaders make better decisions about their technology stack.</p>
-        
-        <div class="my-12 rounded-2xl overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" alt="Cybersecurity and neural networks" class="w-full h-auto" />
-        </div>
-
-        <p>In 2026, the complexity of these systems has increased, but the user experience has become simpler. We break down the components of voice AI—from Speech-to-Text (STT) to Large Language Models (LLM) and Text-to-Speech (TTS)—in a way that's easy for anyone to grasp.</p>
-        
-        <p><strong>The Journey of a Voice Request in 2026:</strong></p>
-        <ol>
-          <li><strong>Capture & Noise Cancellation:</strong> Modern AI can filter out background noise (like a crying baby or traffic) to isolate your voice perfectly.</li>
-          <li><strong>Transcription (STT):</strong> High-fidelity models turn that audio into text with 99.9% accuracy, including correct punctuation and speaker identification.</li>
-          <li><strong>Intent Recognition & Reasoning:</strong> The LLM doesn't just look for keywords; it understands the "why" behind your request and plans a response based on your goal.</li>
-          <li><strong>Neural Synthesis (TTS):</strong> The response is generated with human-like breathing, cadence, and emotion, making it pleasant to listen to.</li>
-        </ol>
-        
-        <p>This entire process now happens faster than a human can blink, enabling the "conversational" feel we've come to expect from modern systems. For a non-technical stakeholder, the takeaway is simple: the tech has reached a point where it is no longer a bottleneck; the only limit is your creativity in designing the conversation.</p>
-      `,
-      author: "Luca Oravecz",
-      date: "Apr 3, 2026",
-      category: "Compliance",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200"
-    },
-    {
-      slug: "roi-of-ai-voice-assistants",
-      title: "Where AI operations teams are finding leverage in 2026",
-      excerpt: "The best ROI isn't just labor savings. It's faster exception handling, cleaner knowledge workflows, and better visibility into repeat friction.",
-      content: `
-        <p>Investing in AI voice technology is a significant decision. In early 2026, we conducted a study across 500 enterprises to understand the real return on investment (ROI). Beyond simple cost savings, AI agents act as force multipliers for your existing teams.</p>
-        
-        <div class="my-12 rounded-2xl overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" alt="Data analytics and growth" class="w-full h-auto" />
-        </div>
-
-        <p>We analyze real-world data to show how AI voice assistants reduce operational costs, increase customer satisfaction (CSAT) scores, and drive revenue growth. The results were staggering: companies using Drift saw an average ROI of 450% within the first year.</p>
-        
-        <p><strong>Quantifiable Benefits observed in 2026:</strong></p>
-        <ul>
-          <li><strong>Reduction in Cost Per Contact:</strong> Automating 85% of routine calls has led to a 70% reduction in average cost per interaction compared to human-only call centers.</li>
-          <li><strong>Increased Availability:</strong> 24/7 support without the cost of night shifts or international teams. This has resulted in a 25% lift in customer retention.</li>
-          <li><strong>Higher Conversion Rates:</strong> Real-time qualification of leads through voice has tripled the speed of sales funnels for our B2B clients.</li>
-        </ul>
-        <p>The average business achieves full ROI on their AI investment within 4-5 months in the current economic climate, with long-term scaling benefits that traditional hiring simply cannot match.</p>
-      `,
-      author: "Luca Oravecz",
-      date: "Mar 26, 2026",
-      category: "Research",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1200"
-    },
-    {
-      slug: "building-trust-with-ai",
-      title: "Trust signals customers actually read in an AI workflow",
-      excerpt: "From clear disclosure to graceful escalation, this is the trust layer that keeps AI products feeling accountable instead of opaque.",
-      content: `
-        <p>Trust is the foundation of any customer relationship. As AI becomes more human-like in 2026, being transparent and ethical is more important than ever. Customers are willing to interact with AI, but they want to know when they are doing so.</p>
-
-        <div class="my-12 rounded-2xl overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1200" alt="Abstract neural connectivity and trust networks" class="w-full h-auto" />
-        </div>
-
-        <p>Learn the best practices for building trust, including disclosure, data privacy, and human-in-the-loop strategies. Trust isn't just a moral imperative; it's a competitive advantage in a world saturated with synthetic media.</p>
-        
-        <p><strong>The 2026 Trust Framework:</strong></p>
-        <ul>
-          <li><strong>Full Disclosure:</strong> Always let the user know they are speaking with an AI assistant at the start of the call. Our research shows this actually *increases* satisfaction by setting clear expectations.</li>
-          <li><strong>Data Sovereignty:</strong> Be clear about how voice data is stored and used. Ensure compliance with the latest 2026 Global AI Privacy Accords.</li>
-          <li><strong>Seamless Escalation:</strong> Never trap a user in an AI loop. Provide an easy, immediate "exit" to a human whenever requested or when the AI detects frustration.</li>
-        </ul>
-        <p>By prioritizing these elements, brands can build deeper loyalty even while automating their most frequent interactions. In the long run, the most successful AI implementations will be the most honest ones.</p>
-      `,
-      author: "Luca Oravecz",
-      date: "Mar 18, 2026",
-      category: "Trust",
-      image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&q=80&w=1200"
-    }
+  {
+    slug: "how-financial-advisors-use-ai-to-save-10-hours-a-week",
+    title: "How financial advisors can use AI to save 10 hours a week",
+    excerpt:
+      "A practical breakdown of where financial advisor AI actually saves time across meeting prep, follow-up, document work, and internal coordination.",
+    content: `
+      <p>Many advisors do not need another theory piece about artificial intelligence. They need a realistic answer to a simpler question: where does it save time inside the week they already have? The firms getting value from AI are not automating everything. They are removing repeat admin work from recurring workflows that already exist.</p>
+      <p>The first place advisors usually see leverage is meeting prep. A client review often requires the same pattern every time: gather recent notes, portfolio changes, outstanding service items, document context, and planning questions. Without help, that means bouncing between the CRM, custodian systems, planning files, and internal notes. With the right workflow, financial advisor AI can assemble that context into one brief before the meeting begins.</p>
+      <p>The second opportunity is follow-up. Most meetings create a summary, a client email, several tasks, and one or two internal handoffs. None of these steps are especially complex, but they happen constantly. That makes them expensive in aggregate. A system like Drift can turn the same meeting context into advisor-ready notes, client email drafting, and internal action items without asking the team to rebuild the conversation several times.</p>
+      <p>Document work is another major source of time loss. Advisors and operations teams frequently review statements, IPS files, trust documents, and planning materials. The bottleneck is not just reading; it is pulling the right points out quickly enough to keep the workflow moving. AI document summaries become useful when they are tied to the next action, whether that means preparing a meeting, drafting a memo, or routing something for compliance review.</p>
+      <p>Email also consumes more time than most firms realize. A surprising amount of advisor effort goes into rewriting familiar messages: confirming next steps, requesting documents, explaining meeting takeaways, or coordinating internally. AI does not remove judgment here, but it does reduce the time spent producing a clean first draft. That is one of the clearest sources of weekly time savings.</p>
+      <p>Compliance is often overlooked in these conversations. When teams think about saving time, they focus on drafting speed. In reality, firms also lose time when review steps are unclear or scattered across tools. Compliance workflow automation helps because it keeps approvals, ownership, and audit history inside the same environment as the work itself. That reduces the back-and-forth that usually slows the team down after the draft is already written.</p>
+      <p>The advisors seeing the best results tend to start with one repeat workflow and measure the difference. They do not try to transform the whole firm at once. They choose a pattern that happens every day or every week, such as meeting prep, post-meeting follow-up, or document review. Then they ask whether the AI reduced context gathering time, lowered rewriting effort, and shortened the path from draft to approved output.</p>
+      <p>That is why the most useful financial advisor AI feels operational rather than futuristic. It saves time by improving the boring middle of the work: finding context, organizing it, drafting the next output, and preserving review. Ten hours a week rarely disappear because one dazzling feature changed the business. They disappear because the same repeated tasks finally stop consuming as much human attention.</p>
+    `,
+    author: "Luca Oravecz",
+    date: "Apr 22, 2026",
+    dateIso: "2026-04-22",
+    category: "Advisor productivity",
+    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    slug: "complete-guide-ai-meeting-notes-rias",
+    title: "The complete guide to AI meeting notes for RIAs",
+    excerpt:
+      "What advisory firms should actually look for in AI meeting notes, from household context to compliance review and post-meeting execution.",
+    content: `
+      <p>AI meeting notes for RIAs sound simple at first. Record the conversation, transcribe it, summarize it, and move on. In practice, that is not what most advisory firms actually need. A transcript is useful, but it is only the starting point. The real value comes from what the notes enable next.</p>
+      <p>A good meeting note system should identify the household context, the key decisions, the unresolved issues, and the actions that need to happen after the call. In advisory work, those actions often include client email drafting, operations requests, planning tasks, compliance documentation, and reminders for the next review. If the notes stop at summary, the team still has to manually do the most important part.</p>
+      <p>This is why many generic note takers feel incomplete inside RIA workflow automation. They capture language, but they do not necessarily produce a usable operating record. Advisors still need to turn the transcript into a household summary. Operations still need to determine what must happen next. Compliance still needs to understand whether the outputs created from the meeting are reviewable and documented properly.</p>
+      <p>When evaluating AI meeting notes for advisors, start with context. Can the notes connect to the household, the relevant documents, and the existing client history? Context is what separates a general summary from an advisor-ready output. If the system cannot reflect the actual client relationship, the summary becomes something the advisor has to fix manually before it is useful.</p>
+      <p>The second requirement is structure. A helpful meeting record should make it easy to see what happened, what is pending, and who owns the next step. This matters for advisors, but it matters just as much for operations teams who need to continue the work later. Clear structure reduces the amount of interpretation required after the meeting is over.</p>
+      <p>The third requirement is follow-through. Meeting notes become more valuable when they can generate downstream work. A strong workflow can turn meeting context into an internal task list, a client recap, a planning memo, or a review package. This is where AI meeting notes stop being a convenience feature and start becoming part of the operating model.</p>
+      <p>Compliance is the fourth requirement, and for many firms it is the deciding factor. The notes and the outputs derived from them should be reviewable. Teams need confidence that the record can support the rest of the workflow rather than creating a shadow process outside of oversight. Firms that care about compliance workflow automation should look carefully at how the system preserves approval states and audit-safe history.</p>
+      <p>The final requirement is adoption. Advisors will only use the workflow if it feels faster than their current process. The best systems reduce post-meeting cleanup, shorten the path to a clean follow-up, and preserve enough context that the team does not need to recreate the meeting from memory later. That is the real benchmark. Good AI meeting notes for RIAs do not just save typing. They save operational friction across the week.</p>
+    `,
+    author: "Luca Oravecz",
+    date: "Apr 20, 2026",
+    dateIso: "2026-04-20",
+    category: "Meeting workflows",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    slug: "wealthbox-vs-orion-which-crm-works-best-with-ai-tools",
+    title: "Wealthbox vs. Orion: which CRM works best with AI tools?",
+    excerpt:
+      "A practical comparison of where Wealthbox and Orion fit into AI-enabled advisor workflows, especially for notes, follow-up, and daily operations.",
+    content: `
+      <p>Firms often compare Wealthbox and Orion based on relationship management, planning support, and portfolio visibility. But as more teams adopt AI, a new question appears: which system works better when AI is helping with notes, drafts, and workflow execution?</p>
+      <p>The answer depends less on the CRM label and more on the quality of context available to the workflow. AI tools become more useful when they can access the right household details, activity history, tasks, and recent client interactions. If the CRM holds clean relationship context, the AI can produce better meeting notes, better email drafts, and more accurate follow-up.</p>
+      <p>Wealthbox is often appreciated for its relationship-first simplicity. Teams using it tend to value clean activity tracking, advisor adoption, and quick access to household context. That can make a Wealthbox AI integration especially attractive for RIAs that want faster client follow-up and more consistent meeting workflows without adding heavy operational complexity.</p>
+      <p>Orion tends to matter more when firms want stronger connections between portfolio data, reporting, and broader advisor workflows. That can make Orion useful in AI use cases where portfolio context is central to the work being generated. For example, if the firm wants meeting prep tied closely to performance changes or portfolio drift, Orion-linked context may carry more weight in the workflow.</p>
+      <p>In practice, the better CRM for AI tools is the one that gives the firm usable, maintained context. A perfectly capable system still becomes weak fuel for AI if the records are incomplete or inconsistent. This is why the operational discipline around the CRM matters just as much as the platform choice itself.</p>
+      <p>Firms should also evaluate what happens after the AI has produced an output. A good system does not just create a note or draft. It should connect that output to the rest of the operating flow. That includes client email drafting, internal tasks, document review, and compliance workflow automation. If the AI tool cannot carry the CRM context through the rest of that chain, much of the value is lost.</p>
+      <p>Another practical consideration is adoption across roles. Advisors, operations, and compliance teams do not all need the same information from the CRM. The best AI workflow will make the right context available to each group without forcing everyone into the same view. That is where integration design becomes more important than a simplistic product comparison.</p>
+      <p>So which CRM works best with AI tools? There is no universal winner. Wealthbox may be the better fit for firms prioritizing speed, clarity, and relationship workflow. Orion may be stronger for firms that want portfolio-linked intelligence to play a larger role. The key is choosing an AI layer that can use whichever CRM context your team already trusts and turn it into cleaner execution.</p>
+    `,
+    author: "Luca Oravecz",
+    date: "Apr 17, 2026",
+    dateIso: "2026-04-17",
+    category: "CRM & integrations",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    slug: "sec-and-finra-compliance-for-ai-tools-what-advisors-need-to-know",
+    title: "SEC and FINRA compliance for AI tools: what advisors need to know",
+    excerpt:
+      "The operational questions advisory firms should ask before deploying AI into meeting notes, client communication, and document workflows.",
+    content: `
+      <p>Advisory firms do not usually fail with AI because the model is weak. They fail because the operational controls around the model are unclear. For firms thinking about SEC and FINRA compliance, the real question is not whether AI can be used. The real question is how the workflow is governed when AI becomes part of day-to-day work.</p>
+      <p>Start with visibility. If an AI system drafts meeting notes, client emails, summaries, or planning language, the firm should be able to see what was produced, where it came from, and who reviewed it. This is the foundation of compliance workflow automation. Without visible states and a reliable record, the firm is forced to manage risk outside the workflow itself.</p>
+      <p>The second issue is approval. Not every output requires the same level of review, but regulated firms need a clear way to distinguish low-risk work from sensitive communications. A strong AI workflow should support that difference. Some drafts may move quickly, while others route through a more explicit approval step before they are used.</p>
+      <p>The third issue is source control. Financial advisor AI becomes easier to trust when the system can show the documents, notes, or household data that informed the output. This matters for accuracy, but it also matters for review. Teams need a way to move from a generated answer back to the underlying material when they need to verify it.</p>
+      <p>Firms should also think carefully about recordkeeping. If AI is part of the client service process, then the resulting drafts, notes, and decisions often become part of the operational history of the relationship. The system should preserve enough of that history to support internal oversight and future review. Otherwise the firm is automating work while weakening its documentation posture.</p>
+      <p>Training and usage boundaries matter too. Teams need shared expectations about where AI is appropriate and where it is not. For example, a firm may be comfortable using AI meeting notes for advisors and first-pass client email drafting, but require stricter review for performance commentary or sensitive compliance language. That kind of boundary setting is what turns a tool into a governed process.</p>
+      <p>None of this means firms need to avoid AI. It means they should select systems designed for regulated workflows rather than generic productivity use. The strongest platforms make review easier, preserve context, and reduce manual checking without creating a black box.</p>
+      <p>For advisors, the practical takeaway is clear. The right AI tool should not just save time. It should make the workflow easier to supervise. If the system increases speed while also improving visibility, it is much more likely to survive real compliance scrutiny and earn trust across the firm.</p>
+    `,
+    author: "Luca Oravecz",
+    date: "Apr 13, 2026",
+    dateIso: "2026-04-13",
+    category: "Compliance",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    slug: "client-email-templates-for-financial-advisors-ai-generated",
+    title: "5 client email templates for financial advisors (AI-generated)",
+    excerpt:
+      "Five practical follow-up patterns advisory firms can standardize, plus what AI should handle and what the advisor should always review.",
+    content: `
+      <p>Client email drafting is one of the easiest places for advisors to get value from AI because the structure repeats constantly. The same categories of outreach appear again and again: meeting recap, document request, review reminder, action-item follow-up, and internal coordination before a client reply. AI works best when it speeds up the first draft while the advisor still controls the judgment.</p>
+      <p>The first useful template is the post-meeting recap. This email usually thanks the client, summarizes the key topics, lists the agreed next steps, and explains what the team will do next. An AI draft can save time by pulling that structure directly from meeting notes instead of asking the advisor to rebuild it manually.</p>
+      <p>The second template is the document request. Advisors often need tax returns, statements, estate documents, or account paperwork after a meeting. The best email is clear, polite, and specific about what is needed and why. AI can help standardize those requests so clients get cleaner communication and the team spends less time rewriting routine outreach.</p>
+      <p>The third template is the planning follow-up. This is common when a client has asked for a projection, a recommendation review, or a planning scenario. These messages need a clear explanation of timing, responsibilities, and any decisions still pending. AI is especially helpful here because it can structure a draft around the action items already captured in the workflow.</p>
+      <p>The fourth template is the annual review reminder. Firms often send some version of this message many times across the year. AI can personalize the tone and reference the household while still preserving a consistent firm standard. This is where RIA workflow automation becomes useful because the system can connect outreach timing, CRM context, and advisor review in one place.</p>
+      <p>The fifth template is the internal escalation note. Not every email goes to a client. Advisors also need short internal messages to operations, planning, or compliance teams explaining what happened and what needs to happen next. AI can reduce the friction here as well, especially when the workflow already contains the meeting notes, source documents, and outstanding tasks.</p>
+      <p>Even with these templates, advisors should keep one principle in mind: AI should draft, not decide. The system can save time on structure, phrasing, and consistency, but the advisor still owns the judgment. That is especially important in regulated communication, where context and nuance matter more than speed alone.</p>
+      <p>The best financial advisor AI workflows keep email connected to the rest of the work. Notes feed drafts, drafts feed review, and review supports clean follow-through. That is how client email drafting becomes a real productivity gain instead of another tool to supervise.</p>
+    `,
+    author: "Luca Oravecz",
+    date: "Apr 10, 2026",
+    dateIso: "2026-04-10",
+    category: "Client communication",
+    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&q=80&w=1200",
+  },
 ];

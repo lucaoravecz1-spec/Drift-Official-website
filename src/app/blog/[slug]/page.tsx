@@ -51,8 +51,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     image: post.image,
-    datePublished: "2026-01-15",
-    dateModified: "2026-04-22",
+    datePublished: post.dateIso,
+    dateModified: post.dateIso,
     author: {
       "@type": "Person",
       name: post.author,

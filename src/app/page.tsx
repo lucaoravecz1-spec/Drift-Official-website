@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/components/navigation/header";
+import CustomAgentsSection from "@/components/sections/custom-agents-section";
 import HeroSection from "@/components/sections/hero-section";
 import HomeFaq from "@/components/sections/home-faq";
+import HomePricingSignal from "@/components/sections/home-pricing-signal";
 import MetricsSection from "@/components/sections/metrics-section";
-import HomeStory from "@/components/sections/home-story";
+import ProductDemoSection from "@/components/sections/product-demo-section";
 import Footer from "@/components/sections/footer";
 
 export const metadata: Metadata = {
-  title: "AI Operations for Financial Teams",
+  title: "Drift AI — AI Agent for Financial Advisors & RIAs | Automate Meetings, Emails & Workflows",
   description:
-    "Streamline financial operations with AI-powered automation, compliance review, and multi-channel workflows. Built for teams that need standards.",
+    "Drift AI automates meeting notes, client emails, document summaries, and compliance workflows for independent financial advisors and RIAs. SOC 2 certified. Start your free trial.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Drift AI | AI Operations for Financial Teams",
+    title: "Drift AI — AI Agent for Financial Advisors & RIAs | Automate Meetings, Emails & Workflows",
     description:
-      "Financial operations software with AI, compliance-first workflows, and audit-ready controls for serious teams.",
+      "Drift AI automates meeting notes, client emails, document summaries, and compliance workflows for independent financial advisors and RIAs. SOC 2 certified. Start your free trial.",
     url: "/",
   },
   twitter: {
-    title: "Drift AI | AI Operations for Financial Teams",
+    title: "Drift AI — AI Agent for Financial Advisors & RIAs | Automate Meetings, Emails & Workflows",
     description:
-      "Financial operations software with AI, compliance-first workflows, and audit-ready controls for serious teams.",
+      "Drift AI automates meeting notes, client emails, document summaries, and compliance workflows for independent financial advisors and RIAs. SOC 2 certified. Start your free trial.",
   },
 };
 
@@ -35,7 +37,7 @@ export default function Home() {
       name: "Drift AI",
       url: "https://driftsaas.online",
       logo: "https://driftsaas.online/logo.png",
-      description: "AI operations platform for financial teams",
+      description: "AI agent for financial advisors and RIAs",
       contactPoint: {
         "@type": "ContactPoint",
         url: "https://driftsaas.online/contact",
@@ -53,9 +55,9 @@ export default function Home() {
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
       description:
-        "Drift AI helps financial teams handle prep, review, and follow-through in one controlled workflow.",
+        "Drift AI automates meeting notes, client emails, document summaries, and compliance workflows for independent financial advisors and RIAs.",
       featureList:
-        "AI automation, compliance review, multi-channel workflows, audit trails, approvals, integrations",
+        "financial advisor AI, RIA workflow automation, AI meeting notes for advisors, client email drafting, compliance workflow automation",
       brand: {
         "@type": "Brand",
         name: "Drift AI",
@@ -117,7 +119,9 @@ export default function Home() {
       <main id="main-content" className="min-h-screen bg-[#0a0a0a]">
         <HeroSection />
         <MetricsSection />
-        <HomeStory />
+        <ProductDemoSection />
+        <CustomAgentsSection />
+        <HomePricingSignal />
         <HomeFaq />
         <div id="resources">
           <Footer />

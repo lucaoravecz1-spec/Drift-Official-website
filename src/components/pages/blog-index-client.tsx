@@ -30,11 +30,11 @@ export default function BlogIndexClient() {
                 Journal
               </p>
               <h1 className="mt-5 max-w-5xl text-[clamp(3rem,7vw,6.2rem)] leading-[0.95] tracking-[-0.055em] text-[#171311]">
-                Financial operations guides, compliance thinking, and workflow strategy.
+                Financial advisor AI guides, RIA workflow automation, and compliance-ready playbooks.
               </h1>
             </div>
             <p className="max-w-xl text-[1rem] leading-7 text-[#64584f]">
-              Articles for teams improving financial workflow automation, compliance reviews, and operations design.
+              Articles for teams improving AI meeting notes for advisors, client email drafting, and compliance workflow automation.
             </p>
           </div>
 
